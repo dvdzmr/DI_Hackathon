@@ -1,4 +1,5 @@
 import os
+from database_handler import DatabaseHandler
 
 
 def main():
@@ -20,9 +21,10 @@ def main():
           "-bannedword- censored is ******** \n Ex: -bannedword- -positiveword-")
 
     # Call database_handler and load banned words to a list
-    # banned_words = database_handler()
-    # my_Text.censor_text(censor_type, banned_words.load_words())
+    database = DatabaseHandler()
+    banned_words = database.load_words()
 
+    # my_Text.censor_text(censor_type, banned_words.load_words())
     # print results
     # my_text.show_results()
 
