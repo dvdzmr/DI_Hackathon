@@ -7,5 +7,8 @@ class DatabaseHandler:
         self.cur = con.cursor()
 
     def load_words(self):
+        result = []
         res = self.cur.execute("SELECT word FROM bannedwords").fetchall()
-        return res
+        for word in res:
+            result.append(word[0])
+        return result
