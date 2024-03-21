@@ -1,0 +1,10 @@
+Hello this is the sample text. In order to test if the system works, you may find offensive or shocking terms.
+Readers discretion is advised.
+
+I love the weather, it is very nice. I hate the rain.
+Jews control the world.
+This sentence doesn't contain any offensive words, and shouldn't be altered by the program.
+The holocaust isn't real.
+So far we have two sentences that should be altered by the program. These are all things that are said in real life, and online.
+Fuck you kike, I hope you die.
+The surfing scene in chicago is not what it used to be.
