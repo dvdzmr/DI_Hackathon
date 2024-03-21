@@ -1,16 +1,21 @@
-# This is a sample Python script.
-
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+def main():
+    pass
+    # create my_text = TextIntake() object
+
+    # Ask user to locate the file
+    # (multiple choice? or limit it to just the file name and current folder)
+    # my_text.get_text(filename)
+
+    # Ask user if they want to censor or replace the words
+    # Call database_handler and load banned words to a list
+    # banned_words = database_handler()
+    # my_Text.censor_text(censor_type, banned_words.load_words())
+
+    # print results
+    # my_text.show_results()
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
