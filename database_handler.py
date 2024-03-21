@@ -1,11 +1,11 @@
+import sqlite3
+
+
 class DatabaseHandler:
     def __init__(self):
-        self.connection = ""
-        self.cursor = ""
-        self.database = ""
-        self.table = ""
-        # connect to database
+        con = sqlite3.connect('bannedwords.db')
+        self.cur = con.cursor()
 
     def load_words(self):
-        pass
-        # return all words in the banned list in a list
+        res = self.cur.execute("SELECT word FROM bannedwords").fetchall()
+        return res
