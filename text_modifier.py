@@ -23,14 +23,14 @@ class TextModifier:
     def censor_text(self, banned_words):
         if self.censor_type == "direct":  # replace banned words with *
             for word in banned_words:
-                if word in self.source:
+                if word in self.source.lower():
                     censor = len(word) * '*'
                     self.source = self.source.replace(word, censor)
 
         elif self.censor_type == "replace":  # replace banned words with another word
             self.load_json()
             for word in banned_words:
-                if word in self.source:
+                if word in self.source.lower():
                     try:
                         replacement = self.json[0][word]
                     except KeyError:  # incase key does not exist, we catch the error here
